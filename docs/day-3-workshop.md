@@ -1,14 +1,12 @@
 # Day 3 Workshop
 
-## Exchange rate updater
-
 During the first workshop, we wrote a currency converter. However, we hard-coded
 the exchange rates. This time, we want to fetch the exchange rates from an API.
 
 We'll be using [openexchangerates.org](https://openexchangerates.org/). You'll
 need to sign up for a free account to get an API key.
 
-### Part 1: Getting an API key and adding it to the environment variables
+## Part 1: Getting an API key and adding it to the environment variables
 
 Set up a _free_ account on Open Exchange Rates. You can do that
 [here](https://openexchangerates.org/signup/free).
@@ -23,7 +21,7 @@ OPENEXCHANGERATES_API_KEY=your_api_key_here
 Make sure that your `.env` file is added to the `.gitignore` file so that it
 doesn't get committed! It's important for security to keep your API key secret.
 
-### Part 2: Fetching the exchange rates
+## Part 2: Fetching the exchange rates
 
 You can use the Open Exchange Rates API to get the latest exchange rates.
 
@@ -57,7 +55,7 @@ You can add a command to your CLI to list the latest exchange rates.
 >
 > It's up to you which one you choose!
 
-### Part 3: Using the exchange rates
+## Part 3: Using the exchange rates
 
 During workshop 1, we wrote a currency converter. We hard-coded the exchange
 rates.
@@ -65,7 +63,7 @@ rates.
 Modify the currency converter to use the exchange rates you fetched from the
 API.
 
-### Extension
+## Extension
 
 Support Bank is really taking shape! Great work.
 

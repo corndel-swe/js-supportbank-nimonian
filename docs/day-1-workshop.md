@@ -3,7 +3,11 @@
 Now that you've got a working project, it's time to start adding some
 functionality to it.
 
-> [!INFO]
+> [!NOTE]
+>
+> Be sure to read `CONTRIBUTING.md` before getting started on the workshops.
+
+> [!TIP]
 >
 > The tasks suggested here don't all need to be completed. They are just
 > recommendations of features you could add to practise what you have been
@@ -37,7 +41,8 @@ Let's write a currency converter. It should take an input like the following:
 node cli currency convert 100 USD GBP
 ```
 
-and return the equivalent amount in the second currency.
+and return the equivalent amount in the second currency. Try adding a few
+different currencies and allow the users to convert between them.
 
 Feel free to hard-code the
 [exchange rates](https://www.google.com/search?q=1+usd+to+gbp) for now. We'll
@@ -82,6 +87,13 @@ node cli salary tax 28000
 and see their new salary after tax.
 
 ## Extensions
+
+### Tests
+
+Consider adding some tests to `tests/models` to ensure your models behave as
+they should.
+
+### Optional parameters
 
 If you add a parameter to a command using square brackets instead of round
 brackets, it becomes optional.

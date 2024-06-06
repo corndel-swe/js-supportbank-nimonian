@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="200px" src="supportbank-logo.png" alt="Supportbank Logo" />
+  <img width="200px" src="docs/supportbank-logo.png" alt="Supportbank Logo" />
 </p>
 
 # Supportbank
@@ -27,21 +27,45 @@ get it working.
 Fortunately, the original developer was practising TDD, so there are some tests
 to guide us!
 
-## Technologies used
-
-| Name        | Purpose                                |
-| ----------- | -------------------------------------- |
-| `mocha`     | Test the project                       |
-| `commander` | Create the command-line interface      |
-| `dotenv`    | Securely store configuration variables |
-| `fetch`     | Retrieve data from a server            |
-
 ## Getting started
 
-1. Fork the project
+1. Make sure your machine is set up according to the instructions with
 
-2. Clone the project locally
+   - [bash](https://tech-docs.corndel.com/bash/)
+   - [vscode](https://tech-docs.corndel.com/vscode/)
+   - [git](https://tech-docs.corndel.com/git/)
+   - [node & npm](https://tech-docs.corndel.com/js/installation.html)
 
-3. Open `day-1-exercises.md` and follow the instructions from there.
+1. Clone the repository (i.e. download it), so you have a copy on your machine.
 
-Good luck!
+1. Once cloned, open a terminal in the project folder, and run
+
+   ```bash
+   npm install
+   ```
+
+   to install dependencies.
+
+## Exercises
+
+The exercises for each day are in the `docs` folder:
+
+- [Day 1 Exercises](./docs/day-1-exercises.md)
+
+- [Day 2 Exercises](./docs/day-2-exercises.md)
+
+- [Day 3 Exercises](./docs/day-3-exercises.md)
+
+## Workshops
+
+> [!NOTE]
+>
+> Be sure to read `CONTRIBUTING.md` before getting started on the workshops.
+
+The workshop for each day can also be found in the `docs` folder:
+
+- [Day 1 Workshop](./docs/day-1-workshop.md)
+
+- [Day 2 Workshop](./docs/day-2-workshop.md)
+
+- [Day 3 Workshop](./docs/day-3-workshop.md)
