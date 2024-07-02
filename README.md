@@ -38,13 +38,10 @@ to guide us!
 
 1. Clone the repository (i.e. download it), so you have a copy on your machine.
 
-1. Once cloned, open a terminal in the project folder, and run
-
-   ```bash
-   npm install
-   ```
-
-   to install dependencies.
+> [!NOTE]
+>
+> Running `npm install` won't work because this project hasn't been fully set up yet!
+> That's what we'll be doing in the Day 1 Exercises, so move straight on :arrow_down:
 
 ## Exercises
 
