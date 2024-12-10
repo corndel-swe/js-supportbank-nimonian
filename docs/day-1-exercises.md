@@ -9,17 +9,17 @@ the steps required to get this repo working.
 (Please note that no tests will pass for Exercise 1 until all steps are
 completed, because the testing tools haven't been installed yet!)
 
-- [ ] Read the docs on
+- [x] Read the docs on
       [Creating a Node project](https://tech-docs.corndel.com/js/node-projects.html).
 
-- [ ] Use `npm init` to
+- [x] Use `npm init` to
       [initialise the project](https://tech-docs.corndel.com/js/node-projects.html#initialising-with-npm-init).
 
-- [ ] Install the `mocha` package
+- [x] Install the `mocha` package
       [as a _development_ dependency](https://tech-docs.corndel.com/js/node-projects.html#installing-packages-with-npm-install)
       (use the `-D` flag).
 
-- [ ] Add the following test scripts to the `package.json`:
+- [x] Add the following test scripts to the `package.json`:
 
   ```JSON
     "scripts": {
@@ -35,10 +35,10 @@ completed, because the testing tools haven't been installed yet!)
     }
   ```
 
-- [ ] [Create a `.gitignore` file](https://tech-docs.corndel.com/js/node-projects.html#tracking-with-git)
+- [x] [Create a `.gitignore` file](https://tech-docs.corndel.com/js/node-projects.html#tracking-with-git)
       and add `node_modules` to it.
 
-- [ ] Now run `npm run test:d1e1`. All tests should be passing. Commit and push
+- [x] Now run `npm run test:d1e1`. All tests should be passing. Commit and push
       your code!
 
 ## Exercise 2: Modularisation
@@ -47,43 +47,43 @@ You'll have seen and used some `import` and `export` statements in the code
 you've been working with. This exercise is about setting that up for the
 project.
 
-- [ ] Read the docs on
+- [x] Read the docs on
       [import and export](https://tech-docs.corndel.com/js/imports-and-exports.html).
 
-- [ ] Configure the `package.json` file to
+- [x] Configure the `package.json` file to
       [use ES6 imports](https://tech-docs.corndel.com/js/imports-and-exports.html#configuring-the-project).
       Run `npm run test:d1e2` - the first test should be passing.
 
-- [ ] There is a file in `exercises/hello.js`. Make sure `num` is
+- [x] There is a file in `exercises/hello.js`. Make sure `num` is
       [exported as a named export](https://tech-docs.corndel.com/js/imports-and-exports.html#named-and-default-exports).
 
-- [ ] Export `sayHi` from `exercises/hello.js` as the default export.
+- [x] Export `sayHi` from `exercises/hello.js` as the default export.
 
-- [ ] Check that the tests are passing. Commit and push!
+- [x] Check that the tests are passing. Commit and push!
 
 ## Exercise 3: Using Commander to set up a CLI
 
 Let's set up a CLI so that we can run the program from the command line.
 
-- [ ] Read the page on
+- [x] Read the page on
       [Making a CLI](https://tech-docs.corndel.com/js/making-a-cli.html).
 
-- [ ] [Install](https://tech-docs.corndel.com/js/making-a-cli.html#installing-commander)
+- [x] [Install](https://tech-docs.corndel.com/js/making-a-cli.html#installing-commander)
       the `commander` package.
 
-- [ ] Make a new file under `cli/index.js`.
+- [x] Make a new file under `cli/index.js`.
       [Set up the CLI](https://tech-docs.corndel.com/js/making-a-cli.html#setting-up-your-cli)
       just like in the docs. Make sure that the version is `'0.1.0'` and the
       description is `'SupportBank'`. Check that `node cli --version` displays
       the version number. At this point you can run `npm run test:d1e3` and
       should see some passing tests.
 
-- [ ] In `cli/transaction.js` there is a `transactionController`. It hasn't been
+- [x] In `cli/transaction.js` there is a `transactionController`. It hasn't been
       registered yet.
       [Import and register](https://tech-docs.corndel.com/js/making-a-cli.html#register-the-command)
       it with the CLI in `cli/index.js`.
 
-- [ ] Right now, the `transaction log` command doesn't do anything. We want to
+- [x] Right now, the `transaction log` command doesn't do anything. We want to
       make it so that it logs the transactions to the console. Make it log a
       transaction nicely, so that the command
 
@@ -97,7 +97,7 @@ Let's set up a CLI so that we can run the program from the command line.
       At 01/03/2024 11:27am, Jon A sent Joe G £100
       ```
 
-- [ ] All tests should now be passing. Commit and push!
+- [x] All tests should now be passing. Commit and push!
 
 Congratulations! Your project is set up with git, testing, ES6 Modules and
 commander. :tada:

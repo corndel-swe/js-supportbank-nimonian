@@ -2,28 +2,28 @@
 
 ## Exercise 1: Environment variables
 
-- [ ] Have a look at the documentation on
+- [x] Have a look at the documentation on
       [environment variables](https://tech-docs.corndel.com/js/environment-variables.html)
 
-- [ ] Install the `dotenv` package.
+- [x] Install the `dotenv` package.
 
-- [ ] Create a `.env` file in root of the project, and add `.env` to your
+- [x] Create a `.env` file in root of the project, and add `.env` to your
       `.gitignore` file.
 
-- [ ] Add the following environment variable:
+- [x] Add the following environment variable:
 
       ```
       SECRET_KEY=fDZD17pD6ox3
       ```
 
-- [ ] Test, commit and push!
+- [x] Test, commit and push!
 
 ## Exercise 2: JSON
 
-- [ ] Have a look through the
+- [x] Have a look through the
       [JSON documentation](https://tech-docs.corndel.com/js/working-with-json.html).
 
-- [ ] Open up
+- [x] Open up
       [exercises/readJSONTransactions.js](/exercises/readJSONTransactions.js)
       and implement the `readJSONTransactions` function. It should
 
@@ -38,12 +38,12 @@
 In this exercise, we'll be fetching data from the
 [PokeAPI](https://pokeapi.co/docs/v2).
 
-- [ ] Have a look at the documentation on
+- [x] Have a look at the documentation on
       [fetching data](https://tech-docs.corndel.com/js/fetching-data.html).
 
-- [ ] Open `exercises/pokeAPI.js`.
+- [x] Open `exercises/pokeAPI.js`.
 
-- [ ] Complete the function `getPokemonList()`. It should
+- [x] Complete the function `getPokemonList()`. It should
 
   - make a `GET` request to `https://pokeapi.co/api/v2/pokemon`
 
