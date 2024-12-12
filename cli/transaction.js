@@ -1,6 +1,6 @@
 import { Command } from 'commander'
-
 import Currency from '../models/Currency.js'
+import { TransactionList } from '../models/Transaction.js'
 
 const transactionController = new Command('transaction')
 
@@ -17,6 +17,19 @@ transactionController
   .action((amount, code, people) => {
     const currency = new Currency(code || 'USD', amount / people)
     console.log(currency.toString())
+  })
+
+transactionController
+  .command('summarise <filename>')
+  .description(
+    'Resolve a list of transactions and display the summary. Assumes file is stored in the data directory.'
+  )
+  .action(async (file) => {
+    const transactions = await TransactionList.fromCSVFile(file)
+    const accounts = transactions.summarise()
+    for (let account of accounts) {
+      console.log(account.name, account.balance.toString())
+    }
   })
 
 export default transactionController
