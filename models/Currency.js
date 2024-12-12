@@ -11,6 +11,20 @@ class Currency {
     USD: 1,
   }
 
+  static async fetchExchangeRates(rates) {
+    const apiKey = process.env.OPEN_EXCHANGE_API_KEY
+
+    if (!apiKey) {
+      throw new Error('Missing OPEN_EXCHANGE_API_KEY environment variable')
+    }
+
+    const url = `https://openexchangerates.org/api/latest.json?app_id=${apiKey}`
+    const response = await fetch(url)
+    const data = await response.json()
+
+    this.rates = data.rates
+  }
+
   #code
   #value
 
