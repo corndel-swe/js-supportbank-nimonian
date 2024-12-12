@@ -25,8 +25,19 @@ transactionController
     'Resolve a list of transactions and display the summary. Assumes file is stored in the data directory.'
   )
   .action(async (file) => {
-    const transactions = await TransactionList.fromCSVFile(file)
+    const ext = file.split('.').at(-1)
+    let transactions
+
+    if (ext === 'csv') {
+      transactions = await TransactionList.fromCSVFile(file)
+    } else if (ext === 'json') {
+      transactions = await TransactionList.fromJSONFile(file)
+    } else {
+      throw new Error('Unsupported file type')
+    }
+
     const accounts = transactions.summarise()
+
     for (let account of accounts) {
       console.log(account.name, account.balance.toString())
     }

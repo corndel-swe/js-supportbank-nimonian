@@ -26,6 +26,22 @@ export class TransactionList {
 
     return new TransactionList(transactions)
   }
+
+  static async fromJSONFile(filename) {
+    const url = new URL(`../data/${filename}`, import.meta.url)
+    const raw = await fs.readFile(url, 'utf-8')
+    const transactions = JSON.parse(raw).map((obj) => {
+      return new Transaction(
+        obj.Date,
+        obj.FromAccount,
+        obj.ToAccount,
+        obj.Narrative,
+        obj.Amount
+      )
+    })
+
+    return new TransactionList(transactions)
+  }
   constructor(transactions) {
     this.transactions = transactions
   }
